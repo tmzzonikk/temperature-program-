@@ -15,25 +15,25 @@ int main(){
     if (escolha == 'C'){
         printf("coloque a temperatura em celcius: ");
         scanf("%lf", &celcius);
-        fahrenheit = (celcius * 9 / 5) + 32; // celcius para fahrenheit!! 
+        fahrenheit = (celcius * 9 / 5) + 32; 
         printf("%.1lf celcius é igual a %.1lf fahrenheit!\n", celcius, fahrenheit);
     }
         else if (escolha == 'c'){
         printf("coloque a temperatura em celcius: ");
         scanf("%lf", &celcius);
-        fahrenheit = (celcius * 9 / 5) + 32; // celcius para fahrenheit!! 
+        fahrenheit = (celcius * 9 / 5) + 32; 
         printf("%.1lf celcius é igual a %.1lf fahrenheit!\n", celcius, fahrenheit);
     }
     else if(escolha == 'F'){
         printf("coloque a temperatura em fahrenheit: ");
         scanf("%lf", &fahrenheit);
-        celcius = (fahrenheit - 32) * 5 / 9; //fahrenheit para celcius
+        celcius = (fahrenheit - 32) * 5 / 9; 
         printf("%.1lf fahrenheit é igual a %.1lf celcius!\n", fahrenheit, celcius);
     }
     else if(escolha == 'f'){
         printf("coloque a temperatura em fahrenheit: ");
         scanf("%lf", &fahrenheit);
-        celcius = (fahrenheit - 32) * 5 / 9; //fahrenheit para celcius
+        celcius = (fahrenheit - 32) * 5 / 9; 
         printf("%.1lf fahrenheit é igual a %.1lf celcius!\n", fahrenheit, celcius);
     }
     else{
