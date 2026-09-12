@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+int main(){
+    
+    char escolha = '\0';
+    double fahrenheit = 0.0;
+    double celcius = 0.0;
+    
+    printf ("-- CONVERSOR DE TEMPERATURA --\n");
+    printf("C. celcius para fahrenheit\n");
+    printf("F. fahrenheit para celcius\n");
+    printf("A temperatura esta em celcius (C) ou fahrenheit (F)?: ");
+    scanf("%c", &escolha);
+    
+    if (escolha == 'C'){
+        printf("coloque a temperatura em celcius: ");
+        scanf("%lf", &celcius);
+        fahrenheit = (celcius * 9 / 5) + 32; // celcius para fahrenheit!! 
+        printf("%.1lf celcius é igual a %.1lf fahrenheit!\n", celcius, fahrenheit);
+    }
+        else if (escolha == 'c'){
+        printf("coloque a temperatura em celcius: ");
+        scanf("%lf", &celcius);
+        fahrenheit = (celcius * 9 / 5) + 32; // celcius para fahrenheit!! 
+        printf("%.1lf celcius é igual a %.1lf fahrenheit!\n", celcius, fahrenheit);
+    }
+    else if(escolha == 'F'){
+        printf("coloque a temperatura em fahrenheit: ");
+        scanf("%lf", &fahrenheit);
+        celcius = (fahrenheit - 32) * 5 / 9; //fahrenheit para celcius
+        printf("%.1lf fahrenheit é igual a %.1lf celcius!\n", fahrenheit, celcius);
+    }
+    else if(escolha == 'f'){
+        printf("coloque a temperatura em fahrenheit: ");
+        scanf("%lf", &fahrenheit);
+        celcius = (fahrenheit - 32) * 5 / 9; //fahrenheit para celcius
+        printf("%.1lf fahrenheit é igual a %.1lf celcius!\n", fahrenheit, celcius);
+    }
+    else{
+        printf("Opção inválida!! selecione entre C of F");
+    }
+    return 0;
+}
